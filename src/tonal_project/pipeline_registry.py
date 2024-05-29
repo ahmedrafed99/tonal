@@ -13,7 +13,6 @@ def register_pipelines() -> Dict[str, Pipeline]:
         A mapping from pipeline names to Pipeline objects.
     """
     pipelines = find_pipelines()
-
     # Concatenate all pipelines
     all_pipelines = sum(pipelines.values(), Pipeline([]))
 
