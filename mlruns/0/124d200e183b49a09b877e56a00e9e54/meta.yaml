@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/124d200e183b49a09b877e56a00e9e54/artifacts
+end_time: 1716990290151
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 124d200e183b49a09b877e56a00e9e54
+run_name: sassy-bass-321
+run_uuid: 124d200e183b49a09b877e56a00e9e54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716990284403
+status: 3
+tags: []
+user_id: Ahmed

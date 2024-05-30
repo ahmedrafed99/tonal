@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/e979f8c90b4747a082ce17252ca26402/artifacts
+end_time: 1716819407396
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e979f8c90b4747a082ce17252ca26402
+run_name: resilient-eel-850
+run_uuid: e979f8c90b4747a082ce17252ca26402
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716819375820
+status: 4
+tags: []
+user_id: Ahmed

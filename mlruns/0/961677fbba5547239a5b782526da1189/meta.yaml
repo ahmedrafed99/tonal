@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/961677fbba5547239a5b782526da1189/artifacts
+end_time: 1716985312332
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 961677fbba5547239a5b782526da1189
+run_name: salty-wasp-315
+run_uuid: 961677fbba5547239a5b782526da1189
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716985224915
+status: 3
+tags: []
+user_id: Ahmed

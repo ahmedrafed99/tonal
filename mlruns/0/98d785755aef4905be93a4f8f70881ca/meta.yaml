@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/98d785755aef4905be93a4f8f70881ca/artifacts
+end_time: 1717059369427
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 98d785755aef4905be93a4f8f70881ca
+run_name: rogue-snake-425
+run_uuid: 98d785755aef4905be93a4f8f70881ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717059362836
+status: 3
+tags: []
+user_id: Ahmed

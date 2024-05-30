@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/40ff036cf8d948cd86b60ac982bc82c8/artifacts
+end_time: 1716988526008
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 40ff036cf8d948cd86b60ac982bc82c8
+run_name: grandiose-colt-949
+run_uuid: 40ff036cf8d948cd86b60ac982bc82c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716988520569
+status: 3
+tags: []
+user_id: Ahmed

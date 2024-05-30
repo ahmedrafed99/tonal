@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/f7a40a21ca6f402695bde99d2ed499f3/artifacts
+end_time: 1716977582879
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f7a40a21ca6f402695bde99d2ed499f3
+run_name: wise-pug-361
+run_uuid: f7a40a21ca6f402695bde99d2ed499f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716977541840
+status: 3
+tags: []
+user_id: Ahmed

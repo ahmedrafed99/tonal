@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/cf1b6b7e6e9b44bf8ef167be5ffc60d2/artifacts
+end_time: 1716995608161
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cf1b6b7e6e9b44bf8ef167be5ffc60d2
+run_name: blushing-stork-796
+run_uuid: cf1b6b7e6e9b44bf8ef167be5ffc60d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716995580824
+status: 3
+tags: []
+user_id: Ahmed

@@ -1,0 +1,12 @@
+{
+  "categorical_accuracy": 0.14304029941558838,
+  "loss": 4592428.0,
+  "mean_absolute_error": 41.52899932861328,
+  "mean_squared_error": 2714.30908203125,
+  "val_categorical_accuracy": 0.09377289563417435,
+  "val_loss": 14444074.0,
+  "val_mean_absolute_error": 40.8646354675293,
+  "val_mean_squared_error": 2670.562255859375,
+  "epoch": 0,
+  "global_step": 171
+}

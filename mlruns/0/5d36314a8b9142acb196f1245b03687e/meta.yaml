@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/5d36314a8b9142acb196f1245b03687e/artifacts
+end_time: 1716995608821
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5d36314a8b9142acb196f1245b03687e
+run_name: adaptable-dog-165
+run_uuid: 5d36314a8b9142acb196f1245b03687e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716995608576
+status: 3
+tags: []
+user_id: Ahmed

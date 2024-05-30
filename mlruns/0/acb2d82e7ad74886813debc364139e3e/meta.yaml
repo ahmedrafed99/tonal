@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/acb2d82e7ad74886813debc364139e3e/artifacts
+end_time: 1716819735714
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: acb2d82e7ad74886813debc364139e3e
+run_name: crawling-trout-425
+run_uuid: acb2d82e7ad74886813debc364139e3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716819735285
+status: 3
+tags: []
+user_id: Ahmed

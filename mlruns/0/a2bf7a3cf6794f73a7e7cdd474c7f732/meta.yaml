@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ahmed/PycharmProjects/tonal-project/mlruns/0/a2bf7a3cf6794f73a7e7cdd474c7f732/artifacts
+end_time: 1716995580009
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a2bf7a3cf6794f73a7e7cdd474c7f732
+run_name: mysterious-squid-287
+run_uuid: a2bf7a3cf6794f73a7e7cdd474c7f732
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716995574382
+status: 3
+tags: []
+user_id: Ahmed
