@@ -34,3 +34,7 @@ y_test:
 model_trained:
   type: pickle.PickleDataset
   filepath: data/06_models/model_trained.pkl
+
+raw_data_to_predict:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/raw_data_to_predict.csv

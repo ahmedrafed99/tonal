@@ -45,7 +45,7 @@ def test_split_dataset(shaped_data):
 def test_create_pipeline():
     pipeline = create_pipeline()
     assert pipeline is not None
-    assert len(pipeline.nodes) == 2  # Check the number of nodes in the pipeline
+    assert len(pipeline.nodes) == 1  # Check the number of nodes in the pipeline
 
     node_names = [node.name for node in pipeline.nodes]
     assert "node_merge_raw_daily_data" in node_names

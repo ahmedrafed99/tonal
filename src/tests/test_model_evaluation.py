@@ -5,6 +5,7 @@ from keras import Model
 from src.tonal_project.pipelines.model_creation.nodes import create_model, train_model
 from src.tonal_project.pipelines.model_creation.pipeline import create_pipeline
 
+
 @pytest.fixture
 def sample_data():
     return pd.DataFrame({
@@ -22,8 +23,7 @@ def test_create_model():
 def test_train_model(mocker, sample_data):
     X, y = sample_data
     mock_model = mocker.Mock()
-    mock_create_model = mocker.patch("src.prothetic.pipelines.model_training.nodes.create_model", return_value=mock_model)
-    mock_early_stopping = mocker.patch("src.prothetic.pipelines.model_training.nodes.callbacks.EarlyStopping", return_value=mocker.Mock())
+    mock_create_model = mocker.patch("src.tonal_project.pipelines.model_creation.nodes.create_model", return_value=mock_model)
 
     x_train, x_test = X.iloc[:3], X.iloc[3:]
     y_train, y_test = y.iloc[:3], y.iloc[3:]

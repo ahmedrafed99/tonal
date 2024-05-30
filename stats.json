@@ -1,1 +1,1 @@
-{"raw_data": {"rows": 10000, "columns": 14, "file_size": 417665}, "preprocessed_data": {"rows": 6825, "columns": 14, "file_size": 477275}, "x_train": {"rows": 5460, "columns": 7, "file_size": 198419}, "x_test": {"rows": 1365, "columns": 7, "file_size": 49653}, "y_train": {"rows": 5460, "columns": 7, "file_size": 189028}, "y_test": {"rows": 1365, "columns": 7, "file_size": 47270}}
+{"raw_data_to_predict": {"rows": 10, "columns": 7, "file_size": 362}, "data_to_predict": {"rows": 10, "columns": 7}, "data_predicted": {"rows": 10, "columns": 7}}

@@ -6,10 +6,22 @@ from keras import layers, regularizers, optimizers, metrics, Model
 import pandas as pd
 import mlflow
 
+import mlflow
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import load_diabetes
+from sklearn.ensemble import RandomForestRegressor
+
 mlflow.autolog()
+db = load_diabetes()
+X_train, X_test, y_train, y_test = train_test_split(db.data, db.target)
+# Create and train models.
+rf = RandomForestRegressor(n_estimators=100, max_depth=6, max_features=3)
+rf.fit(X_train, y_train)
+# Use the model to make predictions on the test dataset.
+predictions = rf.predict(X_test)
+
 
 def create_model(input_shape, units=128, activation='relu', l2_value=0.01, dropout_rate=None, learning_rate=1e-3):
-
     inputs = layers.Input(shape=(input_shape[1], 1))
 
     x = layers.Conv1D(filters=32, kernel_size=3, activation=activation, padding='same')(inputs)

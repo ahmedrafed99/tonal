@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the Tonal Project</h1>
+    <ul>
+        <li><a href="{{ url_for('upload_predict') }}">Upload File for Prediction</a></li>
+        <li><a href="{{ url_for('upload_aggregate') }}">Upload File for Aggregation</a></li>
+    </ul>
+    {% if request.args.get('error') %}
+        <p style="color:red;">Error: {{ request.args.get('error') }}</p>
+    {% endif %}
+    {% if request.args.get('success') %}
+        <p style="color:green;">Success: {{ request.args.get('success') }}</p>
+    {% endif %}
+</body>
+</html>
