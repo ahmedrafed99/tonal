@@ -1,10 +1,19 @@
 import pytest
+import os
+import sys
 import pandas as pd
 from unittest import mock
 from keras import Model
+
+# Obtenez le répertoire racine du projet
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+
+# Ajoutez le répertoire racine au chemin de recherche Python
+sys.path.append(project_root)
+
+# Now you can import modules from src without relative imports
 from src.tonal_project.pipelines.model_creation.nodes import create_model, train_model
 from src.tonal_project.pipelines.model_creation.pipeline import create_pipeline
-
 
 @pytest.fixture
 def sample_data():
@@ -24,6 +33,7 @@ def test_train_model(mocker, sample_data):
     X, y = sample_data
     mock_model = mocker.Mock()
     mock_create_model = mocker.patch("src.tonal_project.pipelines.model_creation.nodes.create_model", return_value=mock_model)
+    mock_early_stopping = mocker.patch("keras.callbacks.EarlyStopping", return_value=mocker.Mock())  # Patch keras.callbacks.EarlyStopping
 
     x_train, x_test = X.iloc[:3], X.iloc[3:]
     y_train, y_test = y.iloc[:3], y.iloc[3:]
