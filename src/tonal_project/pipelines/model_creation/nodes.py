@@ -5,9 +5,7 @@ import mlflow
 mlflow.autolog()
 
 def create_model(input_shape, units=128, activation='relu', l2_value=0.01, dropout_rate=None, learning_rate=1e-3):
-    # Check if the input shape has 3 dimensions
-    if len(input_shape) != 3:
-        raise ValueError("Expected input shape to have 3 dimensions")
+    
 
     inputs = layers.Input(shape=(input_shape[1], 1))
 
