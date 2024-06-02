@@ -42,7 +42,10 @@ def predict_model(input_data: pd.DataFrame, model: Model) -> pd.DataFrame:
     # Reshape the data to match the model's expected input shape
     data_reshaped = data_transformed.values.reshape((data_transformed.shape[0], data_transformed.shape[1], 1))
 
+    # Reshape the data to match the model's expected input shape
+    print(f"Transformed data shape: {data_transformed.shape}")
     data_predicted = model.predict(data_reshaped)
+    print(f"Predicted data: {data_predicted}")
 
     # Adjust the column names to match the expected output
     predicted_columns = ['after_exam_125_Hz', 'after_exam_250_Hz', 'after_exam_500_Hz',

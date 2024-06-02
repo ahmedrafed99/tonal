@@ -5,10 +5,19 @@ from kedro.framework.startup import bootstrap_project
 from pathlib import Path
 import os
 
+from keras import *
+from keras.src.saving import load_model
+
+from src.tonal_project.pipelines.model_prediction.nodes import predict_model
+
 app = Flask(__name__)
 metadata = bootstrap_project(Path.cwd())
 
 project_path = Path("tonal-project")
+
+# Load the model
+model_path = "data/06_models/model_trained.h5"  # Update this path to the location of your model
+model = load_model(model_path)
 
 
 @app.route('/', methods=['GET'])
@@ -29,24 +38,20 @@ def upload_aggregate():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
+        # Read the uploaded file
         file = request.files['file']
         raw_data_df = pd.read_csv(file)
 
-        raw_data_df.to_csv("data/01_raw/raw_data_to_predict.csv", index=False)
+        # Use the predict_model function to get predictions
+        predictions = predict_model(raw_data_df, model)
 
-        with KedroSession.create(project_path=".") as session:
-            session.run(pipeline_name="model_prediction")
-
-        transformed_data = pd.read_csv("data/07_model_input/data_to_predict.csv")
-        data_predicted = pd.read_csv("data/07_model_output/predictions.csv")
-
-        data_to_predict = pd.concat([transformed_data, data_predicted], axis=1)
+        # Combine the input data with predictions for display
+        data_to_predict = pd.concat([raw_data_df, predictions], axis=1)
 
         return render_template('results.html', tables=[data_to_predict.to_html(classes='data')],
                                titles=data_to_predict.columns.values)
     except Exception as e:
         return redirect(url_for('home', error=str(e)))
-
 
 @app.route('/aggregate', methods=['GET', 'POST'])
 def aggregate():

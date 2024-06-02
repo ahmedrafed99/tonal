@@ -51,5 +51,6 @@ def train_model(X_train: pd.DataFrame, y_train: pd.DataFrame, X_test: pd.DataFra
     model = create_model(X_train.shape, dropout_rate=0.5)
 
     model.fit(X_train, y_train, epochs=50, validation_data=(X_test, y_test))
-
+    # Save the model in .h5 format
+    model.save("data/06_models/model_trained.h5")
     return model
