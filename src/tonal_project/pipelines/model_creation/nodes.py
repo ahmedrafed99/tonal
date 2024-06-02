@@ -5,7 +5,7 @@ import mlflow
 mlflow.autolog()
 
 def create_model(input_shape, units=128, activation='relu', l2_value=0.01, dropout_rate=None, learning_rate=1e-3):
-    
+
 
     inputs = layers.Input(shape=(input_shape[1], 1))
 
